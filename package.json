@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -20,9 +22,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.7.0",
     "react-spinners": "^0.17.0",
-    "tailwindcss": "^4.1.11",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
