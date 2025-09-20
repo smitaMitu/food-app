@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/food-app">
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/success" element={<Success/>}/>
